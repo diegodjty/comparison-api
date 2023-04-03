@@ -3,10 +3,10 @@ import { db } from "@/lib/db";
 import { NextApiRequest } from "next";
 import { getServerSession } from "next-auth";
 import { NextResponse } from "next/server";
-import { CreateApiData } from "../../../types/api";
 import { nanoid } from "nanoid";
 import { z } from "zod";
 import { withMethods } from "@/lib/api-middlewares/with-methods";
+import { CreateApiData } from "../../../types/api/index";
 
 const handler = async (
   req: NextApiRequest,
